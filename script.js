@@ -28,3 +28,61 @@ function tabuada(){
 
 
 }
+
+function divisao(){
+
+    var num1 = document.getElementById("txtdiv")
+    var num2 = document.getElementById("txtd")
+    var result = document.getElementById("seltabs")
+
+    if(num1.value.length == 0 || num2.value.length == 0){
+        alert("[ERRO] Por favor, digite um número!")
+    }else{
+        var n1 = Number(num1.value)
+        var n2 = Number(num2.value)
+        var item2 = document.createElement("option")
+        item2.text= `${n1} / ${n2} = ${n1/n2}`
+
+        result.appendChild(item2)
+
+    }
+}
+
+function adicao(){
+
+    var soma1 = document.getElementById("txtsom")
+    var soma2 = document.getElementById("txtsoma")
+    var result = document.getElementById("tabsom")
+
+    if(soma1.value.length == 0 || soma2.value.length == 0){
+        alert("[ERRO] Por favor, digite um número!")
+    }else{
+        var soma1 = Number(soma1.value)
+        var soma2 = Number(soma2.value)
+        var item3 = document.createElement("option")
+        item3.text= `${soma1} + ${soma2} = ${soma1+soma2}`
+
+        result.appendChild(item3)
+
+    }
+
+}
+
+function subtracao(){
+
+    var subt1 = document.getElementById("txtsub")
+    var subt2 = document.getElementById("txtsub2")
+    var result = document.getElementById("seltabsub")
+
+    if(subt1.value.length == 0 || subt2.value.length == 0){
+        alert("[ERRO] Por favor, digite um número!")
+    }else{
+        var subt1 = Number(subt1.value)
+        var subt2 = Number(subt2.value)
+        var item4 = document.createElement("option")
+        item4.text = `${subt1} - ${subt2} = ${subt1-subt2}`
+
+        result.appendChild(item4)
+    }
+
+}
