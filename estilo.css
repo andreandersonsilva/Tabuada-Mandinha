@@ -1,22 +1,63 @@
 body{
-    background: pink;
+    background: url("novahello.png");
+    background-size: contain;
     font: normal 15pt arial;
 }
 
 header{
     text-align: center;
-    color:white;
+    color:black;
     padding: 20px;
+
     
 }
 
-section{
+section#mult{
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 400px;
     margin: auto;
     box-shadow: 5px 5px 10px rgb(0,0,0,0.514);
+    position: absolute;
+    top: 130px;
+    left:200px;
+}
+
+section#div{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.514);
+    position: absolute;
+    top:130px;
+    left: 700px;
+}
+
+section#soma{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.514);
+    position: absolute;
+    top:400px;
+    left: 200px;
+}
+
+section#sub{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgb(0,0,0,0.514);
+    position: absolute;
+    top:400px;
+    left: 700px;
 }
 
 footer{
@@ -29,5 +70,12 @@ footer{
     margin: auto;
     margin-top: 15px;
     box-shadow: 5px 5px 10px rgb(0,0,0,0.514);
+    position:absolute;
+    top: 650px;
+    left: 400px;
+
 }
 
+select{
+    width: 150px;
+}
